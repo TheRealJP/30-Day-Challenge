@@ -1,5 +1,4 @@
-# ==== 30-DAY CODING CHALLENGE: DAY 1 ====
-#
+# ========================================
 # Problem:
 # Given a list of numbers and a number k,
 # return whether any two numbers from the list add up to k.
@@ -14,7 +13,7 @@ values = [10, 15, 3, 7]
 k = 17
 
 
-def isSumOfKeyPresent(array, key):
+def has_sum_of_key(array, key):
     ''' returns True if there exists a pair of values within the array that summate to the argued key.'''
     for x in array:  # Loop throw each value
         for y in array[1:]:    # check value against all other values
@@ -25,4 +24,4 @@ def isSumOfKeyPresent(array, key):
     return False
 
 
-print(isSumOfKeyPresent(values, k))
+print(has_sum_of_key(values, k))
